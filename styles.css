@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+.canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+.text {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  line-height: 110px;
+  white-space: nowrap;
+  border-top: solid black 5px;;
+}
+.text::before {
+  content: "is amazing";
+  position: absolute;
+  bottom: -80%;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
